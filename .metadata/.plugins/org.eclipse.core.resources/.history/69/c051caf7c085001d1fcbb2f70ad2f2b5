@@ -1,0 +1,10 @@
+package kr.go.mofa.service;
+
+import java.util.List;
+
+import kr.go.mofa.dto.SampleDTO;
+
+public interface SampleService {
+	
+	List<SampleDTO> sample() throws Exception;
+}

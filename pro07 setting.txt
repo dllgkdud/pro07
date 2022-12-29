@@ -1,0 +1,8 @@
+pro07
+
+build mvn : 4.0v
+packaging : .war
+framework : spring legacy
+test : junit4(4.8v)
+관점지향형 log4j
+의존성관리도구 inject

@@ -1,0 +1,27 @@
+package kr.go.mofa.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import kr.go.mofa.dto.NoticeDTO;
+import kr.go.mofa.service.NoticeService;
+
+@Controller
+@RequestMapping("/notice/")
+public class NoticeController {
+	
+	@Autowired
+	NoticeService noticeService;
+	
+	@GetMapping("list")
+	public String noticeList(Model model) throws Exception {
+		List<NoticeDTO> notice = noticeService.noticeList();
+		model.addAttribute("notice", notice);
+		return 
+	}
+}
