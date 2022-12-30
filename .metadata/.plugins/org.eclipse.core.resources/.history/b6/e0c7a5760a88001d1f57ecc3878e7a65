@@ -1,0 +1,48 @@
+package kr.go.mofa.service;
+
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import kr.go.mofa.dto.UsersDTO;
+import kr.go.mofa.model.UsersDAO;
+
+@Service
+public class UsersServiceImpl implements UsersService {
+	
+	@Autowired
+	UsersDAO usersDao;
+	
+	@Inject
+	BCryptPasswordEncoder pwdEncoder;
+	
+	@Override
+	public List<UsersDTO> usersList() throws Exception {
+		return usersDao.usersList();
+	}
+
+	@Override
+	public void usersAdd(UsersDTO dto) throws Exception {
+		usersDao.usersAdd(dto);
+	}
+
+	@Override
+	public boolean add(HttpServletRequest req) throws Exception {
+		boolean add = false;
+		UsersDTO dto = new UsersDTO();
+		//암호화
+				String pw = dto.getPw();
+				String pwd = pwdEncoder.encode(pw);
+				dto.setPw(pwd);
+				usersService.usersAdd(dto);
+		
+		dto.set
+		
+		return add;
+	}
+}

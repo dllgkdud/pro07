@@ -16,15 +16,24 @@
 <body>
 <jsp:include page="../common/header.jsp"></jsp:include>
 	<h2>공지사항</h2>
-	<c:forEach items="${notice }" var="notice" varStatus="status">
-		<span>${status.count } </span>.
-		<span><a href="${path1 }/notice/one?no=${notice.no }">${notice.title }</a> </span>,
-		<span>${notice.dept }</span>,
-		<span>${notice.regdate }</span>,
-		<span>${notice.hits }</span><p>		
-	</c:forEach>
+	<table class="table">
+		<tr>
+			<th>번호</th>
+			<th>제목</th>
+			<th>부서명</th>
+			<th>작성일</th>
+		</tr>
+		<c:forEach items="${notice }" var="notice" varStatus="status">
+		<tr>
+			<td>${status.count }</td>
+			<td><a href="${path1 }/notice/one?no=${notice.no }">${notice.title }</a></td>
+			<td>${notice.dept }</td>
+			<td>${notice.regdate }</td>
+		</tr>
+		</c:forEach>
+	</table>
 	<div class="button_grp">
-		<a href="${path1 }/notice/add" class="button">작성</a>
+		<a href="${path1 }/notice/add.do" class="button">작성</a>
 	</div>
 </body>
 </html>

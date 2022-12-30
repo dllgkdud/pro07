@@ -29,12 +29,18 @@ alter table notice modify column hits int default 0;
 
 insert into notice(title,content,dept,regdate) values('2022년 기록관리기준표 변경사항 고시','2022년도 외교부 기록관리기준표 신설 및 변경사항을 붙임과 같이 알립니다.','외교사료팀',now());
 update notice set hits=hit+1 where no=1;
+drop table notice cascade;
 
 create table users(
-    id varchar(50) primary key,
+	no int auto_increment primary key,
+    id varchar(50),
     pw varchar(2000),
     name varchar(100),
     email varchar(200),
-    dept varchar(100),
+    address varchar(1000),
     regdate datetime default now()
 );
+select * from users;
+drop table users;
+
+insert into notice values('admin','1234','관리자','admin@naver.com','경기도 고양시 일산동구 장항동 771',now());

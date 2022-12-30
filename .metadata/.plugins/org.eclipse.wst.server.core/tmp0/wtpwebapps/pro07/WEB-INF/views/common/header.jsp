@@ -12,7 +12,7 @@
 		<a href="#">외교부 소개</a>
 	</div>
 	<div class="tnb">
-		<a href="#">로그인</a>
-		<a href="#">회원가입</a>
+		<a href="${path1 }/user/login">로그인</a>
+		<a href="${path1 }/user/add">회원가입</a>
 	</div>
 </header>

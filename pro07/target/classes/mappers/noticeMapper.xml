@@ -13,6 +13,12 @@
 		update notice set hits=hits+1 where no = #{no}
 	</update>
 	<insert id="addNotice">
-		insert into notice(title, content, dept, regdate) values(#{title}, #{content}, '운영지원담당관실(서무계)', now())
+		insert into notice(title,content,dept,regdate) values(#{title},#{content},#{dept},now())
 	</insert>
+	<update id="updNotice">
+		update notice set title = #{title}, content = #{content} where no = #{no}
+	</update>
+	<delete id="delNotice">
+		delete from notice where no = #{no}
+	</delete>
 </mapper>

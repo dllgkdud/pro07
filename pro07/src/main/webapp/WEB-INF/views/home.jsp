@@ -13,7 +13,7 @@
 	<jsp:include page="common/head.jsp"></jsp:include>
 </head>
 <body>
-<jsp:include page="common/header.jsp"></jsp:include>
+<header><jsp:include page="common/header.jsp"></jsp:include></header>
 <h1>
 	Hello world!  
 </h1>

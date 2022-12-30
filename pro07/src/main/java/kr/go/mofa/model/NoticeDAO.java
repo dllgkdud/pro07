@@ -9,4 +9,6 @@ public interface NoticeDAO {
 	public NoticeDTO noticeOne(int no) throws Exception;
 	public void updateHits(int no) throws Exception;
 	public void noticeAdd(NoticeDTO notice) throws Exception;
+	public void noticeUpd(NoticeDTO notice) throws Exception;
+	public void noticeDel(int no) throws Exception;
 }

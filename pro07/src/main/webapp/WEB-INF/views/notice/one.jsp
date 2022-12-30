@@ -16,28 +16,19 @@
 <body>
 <jsp:include page="../common/header.jsp"></jsp:include>
 	<h2>공지사항</h2>
-		<table class="table">
-			<tr>
-				<th>제목</th>
-				<td>${dto.title }</td>
-			</tr>
-			<tr>
-				<th>내용</th>
-				<td>${dto.content }</td>
-			</tr>
-			<tr>
-				<th>부서명</th>
-				<td>${dto.dept }</td>
-			</tr>
-			<tr>
-				<th>작성일</th>
-				<td>${dto.regdate }</td>
-			</tr>
-		</table>
-		<div class="button_group">
-			<a href="${path1 }/notice/list" class="list_btn">목록</a>
-			<a href="#" class="del_btn">삭제</a>
-			<a href="#" class="mod_btn">수정</a>
+	<div class="table">
+		<h3>${dto.title }</h3>
+		<div class="notice_info">
+			<span>부서명 : </span><span>${dto.dept }</span>&nbsp;&nbsp;
+			<span>작성일 : </span><span>${dto.regdate }</span>&nbsp;&nbsp;
+			<span>조회수 : </span><span>${dto.hits }</span>
 		</div>
+		<div class="notice_content">${dto.content }</div>
+	</div>
+	<div class="button_group">
+		<a href="${path1 }/notice/list" class="list_btn">목록</a>
+		<a href="${path1 }/notice/del.do?no=${dto.no}" class="del_btn">삭제</a>
+		<a href="${path1 }/notice/upd.do?no=${dto.no}" class="mod_btn">수정</a>
+	</div>
 </body>
 </html>

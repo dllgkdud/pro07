@@ -33,4 +33,14 @@ public class NoticeDAOImpl implements NoticeDAO {
 	public void noticeAdd(NoticeDTO notice) throws Exception {
 		sqlSession.insert("notice.addNotice", notice);
 	}
+
+	@Override
+	public void noticeUpd(NoticeDTO notice) throws Exception {
+		sqlSession.update("notice.updNotice", notice);
+	}
+
+	@Override
+	public void noticeDel(int no) throws Exception {
+		sqlSession.delete("notice.delNotice", no);
+	}
 }

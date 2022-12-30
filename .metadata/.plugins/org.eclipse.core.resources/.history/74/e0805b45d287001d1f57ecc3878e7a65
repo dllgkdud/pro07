@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+	<select id="userList" resultType="kr.go.mofa.dto.UserDTO">
+		select * from user
+	</select>
+	<select id="userOne" resultType="kr.go.mofa.dto.UserDTO">
+		select * from user where no = #{no}
+	</select>
+	<update id="updateHits">
+		update user set hits=hits+1 where no = #{no}
+	</update>
+	<insert id="adduser">
+		insert into user( ,regdate) values(#{title}, #{content}, , now())
+	</insert>
+</mapper>

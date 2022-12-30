@@ -30,7 +30,17 @@ public class NoticeServiceImpl implements NoticeService {
 	}
 
 	@Override
-	public void noticeAdd(NoticeDTO notice) throws Exception {
+	public void addNotice(NoticeDTO notice) throws Exception {
 		noticeDao.noticeAdd(notice);
+	}
+
+	@Override
+	public void updNotice(NoticeDTO notice) throws Exception {
+		noticeDao.noticeUpd(notice);
+	}
+
+	@Override
+	public void delNotice(int no) throws Exception {
+		noticeDao.noticeDel(no);
 	}
 }
