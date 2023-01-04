@@ -1,5 +1,0 @@
-package kr.go.mofa.model;
-
-public interface SampleDAO {
-
-}

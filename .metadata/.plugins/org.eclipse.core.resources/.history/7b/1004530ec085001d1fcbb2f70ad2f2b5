@@ -1,7 +1,0 @@
-package kr.go.mofa.dto;
-
-public class SampleDTO {
-	private String id;
-	private String pw;
-	private String regdate;
-}

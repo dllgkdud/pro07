@@ -18,6 +18,11 @@ public class UsersDAOImpl implements UsersDAO {
 	public List<UsersDTO> usersList() throws Exception {
 		return sqlSession.selectList("users.usersList");
 	}
+	
+	@Override
+	public UsersDTO usersDetail(String id) throws Exception {
+		return sqlSession.selectOne("users.usersOne", id);
+	}
 
 	@Override
 	public void usersAdd(UsersDTO dto) throws Exception {

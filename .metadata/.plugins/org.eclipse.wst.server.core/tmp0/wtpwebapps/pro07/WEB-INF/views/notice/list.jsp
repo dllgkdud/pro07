@@ -15,25 +15,28 @@
 </head>
 <body>
 <jsp:include page="../common/header.jsp"></jsp:include>
-	<h2>공지사항</h2>
-	<table class="table">
-		<tr>
-			<th>번호</th>
-			<th>제목</th>
-			<th>부서명</th>
-			<th>작성일</th>
-		</tr>
-		<c:forEach items="${notice }" var="notice" varStatus="status">
-		<tr>
-			<td>${status.count }</td>
-			<td><a href="${path1 }/notice/one?no=${notice.no }">${notice.title }</a></td>
-			<td>${notice.dept }</td>
-			<td>${notice.regdate }</td>
-		</tr>
-		</c:forEach>
-	</table>
-	<div class="button_grp">
-		<a href="${path1 }/notice/add.do" class="button">작성</a>
+	<div class="container">
+		<h2>공지사항</h2>
+		<table class="table">
+			<tr>
+				<th>번호</th>
+				<th>제목</th>
+				<th>부서명</th>
+				<th>작성일</th>
+			</tr>
+			<c:forEach items="${notice }" var="notice" varStatus="status">
+			<tr>
+				<td>${status.count }</td>
+				<td><a href="${path1 }/notice/one?no=${notice.no }">${notice.title }</a></td>
+				<td>${notice.dept }</td>
+				<td>${notice.regdate }</td>
+			</tr>
+			</c:forEach>
+		</table>
+		<div class="button_grp">
+			<a href="${path1 }/notice/add.do" class="button">작성</a>
+		</div>
 	</div>
+<jsp:include page="../common/footer.jsp"></jsp:include>	
 </body>
 </html>

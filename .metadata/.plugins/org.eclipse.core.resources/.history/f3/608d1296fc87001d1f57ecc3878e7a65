@@ -1,5 +1,0 @@
-/*# sourceURL=resources/assets/css/main.css */
-@charset "UTF-8";
-
-input { height:1rem; padding-left: 0.3rem; }
-textarea { padding-left: 0.3rem; resize: none; }

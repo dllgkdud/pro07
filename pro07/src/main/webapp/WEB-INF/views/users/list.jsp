@@ -14,28 +14,31 @@
 	<jsp:include page="../common/head.jsp"></jsp:include>
 </head>
 <body>
-<header><jsp:include page="../common/header.jsp"></jsp:include></header>
-	<h2>회원 목록</h2>
-	<table class="table">
-		<tr>
-			<th>번호</th>
-			<th>아이디</th>
-			<th>이름</th>
-			<th>부서명</th>
-			<th>가입일</th>
-		</tr>
-		<c:forEach items="${user }" var="user" varStatus="status">
-		<tr>
-			<td>${status.count }</td>
-			<td><a href="${path1 }/users/one?id=${user.id }">${user.id }</a></td>
-			<td>${user.name }</td>
-			<td>${user.dept }</td>
-			<td>${user.regdate }</td>
-		</tr>
-		</c:forEach>
-	</table>
-	<div class="button_grp">
-		<a href="${path1 }/users/add.do" class="button">등록</a>
+<jsp:include page="../common/header.jsp"></jsp:include>
+	<div class="container">
+		<h2>회원 목록</h2>
+		<table class="table">
+			<tr>
+				<th>번호</th>
+				<th>아이디</th>
+				<th>이름</th>
+				<th>부서명</th>
+				<th>가입일</th>
+			</tr>
+			<c:forEach items="${user }" var="user" varStatus="status">
+			<tr>
+				<td>${status.count }</td>
+				<td><a href="${path1 }/users/one?id=${user.id }">${user.id }</a></td>
+				<td>${user.name }</td>
+				<td>${user.dept }</td>
+				<td>${user.regdate }</td>
+			</tr>
+			</c:forEach>
+		</table>
+		<div class="button_grp">
+			<a href="${path1 }/users/add.do" class="button">등록</a>
+		</div>
 	</div>
+<jsp:include page="../common/footer.jsp"></jsp:include>	
 </body>
 </html>

@@ -1,0 +1,26 @@
+/*# sourceURL=resources/assets/css/main.css */
+@charset "UTF-8";
+
+/* media */
+@media screen and (max-width:767px) {
+  body, html { margin: 0; padding: 0; }
+  .player .viewer { max-width:100vw; width:auto; }
+  i > img {  max-width: 100vw; height: auto; }
+}
+@media screen and (min-width:768px) and (max-width:959px){
+  body, html { margin: 0; padding: 0; }
+  .player .viewer { max-width:100vw; width:auto; }
+  i > img { max-width: 100vw; height: auto; }
+}
+@media screen and (min-width:960px) {
+  body, html { margin: 0; padding: 0; }
+  .player .viewer { max-width:100vw; width:auto; }
+  i { min-width: 100vw; padding: 0 auto; height: auto; }
+}
+
+/* header */
+a { color: #222; }
+.nav-tabs .nav-link { border: none; }
+.nav-tabs .nav-link:hover { border-bottom: 2px solid #a47e4f; }
+
+/* footer */

@@ -41,6 +41,6 @@ create table users(
     regdate datetime default now()
 );
 select * from users;
-drop table users;
+drop table users cascade;
 
-insert into notice values('admin','1234','관리자','admin@naver.com','경기도 고양시 일산동구 장항동 771',now());
+insert into users values(1, 'admin','EjirwAY9zs5/2VfMRE9fyA==','관리자','admin@naver.com','경기도 고양시 일산동구 장항동 771', now());

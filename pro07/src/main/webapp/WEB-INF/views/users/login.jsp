@@ -14,25 +14,28 @@
 	<jsp:include page="../common/head.jsp"></jsp:include>
 </head>
 <body>
-<header><jsp:include page="../common/header.jsp"></jsp:include></header>
-	<h2>회원 등록</h2>
-	<form action="${path1 }/user/login.do" method="post">
-		<table class="table">
-			<tr>
-				<th>아이디</th>
-				<td>
-					<input type="text" name="id" id="id" placeholder="아이디를 입력하십시오." required>
-				</td>
-			</tr>
-			<tr>
-				<th>비밀번호</th>
-				<td><input type="password" name="pw" id="pw" placeholder="비밀번호를 입력하십시오." required></td>
-			</tr>
-		</table>
-		<div class="button_group">
-			<a href="${path1 }/users/list" class="reset_btn">취소</a>
-			<input type="submit" class="submit_btn" value="로그인">
-		</div>
-	</form>
+<jsp:include page="../common/header.jsp"></jsp:include>
+	<div class="container">
+		<h2>로그인</h2>
+		<form action="${path1 }/user/login.do" method="post">
+			<table class="table">
+				<tr>
+					<th>아이디</th>
+					<td>
+						<input type="text" name="id" id="id" placeholder="아이디를 입력하십시오." required>
+					</td>
+				</tr>
+				<tr>
+					<th>비밀번호</th>
+					<td><input type="password" name="pw" id="pw" placeholder="비밀번호를 입력하십시오." required></td>
+				</tr>
+			</table>
+			<div class="button_group">
+				<a href="${path1 }/users/list" class="reset_btn">취소</a>
+				<input type="submit" class="submit_btn" value="로그인">
+			</div>
+		</form>
+	</div>
+<jsp:include page="../common/footer.jsp"></jsp:include>	
 </body>
 </html>

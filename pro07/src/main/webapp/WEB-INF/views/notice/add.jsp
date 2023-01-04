@@ -14,27 +14,30 @@
 	<jsp:include page="../common/head.jsp"></jsp:include>
 </head>
 <body>
-<header><jsp:include page="../common/header.jsp"></jsp:include></header>
-	<h2>공지사항</h2>
-	<form action="${path1 }/notice/add.do" method="post">
-		<table class="table">
-			<tr>
-				<th>제목</th>
-				<td><input type="text" name="title" id="title" placeholder="제목을 입력하십시오." required></td>
-			</tr>
-			<tr>
-				<th>내용</th>
-				<td><textarea cols="100" rows="20" maxlength="1900" name="content" id="content" placeholder="내용을 입력하십시오." required></textarea></td>
-			</tr>
-			<tr>
-				<th>부서명</th>
-				<td><input type="text" name="dept" id="dept" placeholder="부서를 입력하십시오." required></td>
-			</tr>
-		</table>
-		<div class="button_group">
-			<a href="${path1 }/notice/list" class="reset_btn">취소</a>
-			<input type="submit" class="submit_btn" value="등록">
-		</div>
-	</form>
+<jsp:include page="../common/header.jsp"></jsp:include>
+	<div class="container">
+		<h2>공지사항</h2>
+		<form action="${path1 }/notice/add.do" method="post">
+			<table class="table">
+				<tr>
+					<th>제목</th>
+					<td><input type="text" name="title" id="title" placeholder="제목을 입력하십시오." required></td>
+				</tr>
+				<tr>
+					<th>내용</th>
+					<td><textarea cols="100" rows="20" maxlength="1900" name="content" id="content" placeholder="내용을 입력하십시오." required></textarea></td>
+				</tr>
+				<tr>
+					<th>부서명</th>
+					<td><input type="text" name="dept" id="dept" placeholder="부서를 입력하십시오." required></td>
+				</tr>
+			</table>
+			<div class="button_group">
+				<a href="${path1 }/notice/list" class="reset_btn">취소</a>
+				<input type="submit" class="submit_btn" value="등록">
+			</div>
+		</form>
+	</div>
+<jsp:include page="../common/footer.jsp"></jsp:include>
 </body>
 </html>

@@ -14,8 +14,9 @@
 	<jsp:include page="../common/head.jsp"></jsp:include>
 </head>
 <body>
-<header><jsp:include page="../common/header.jsp"></jsp:include></header>
-	<h2>공지사항</h2>
+<jsp:include page="../common/header.jsp"></jsp:include>
+	<div class="container">
+		<h2>공지사항</h2>
 		<form action="${path1 }/notice/upd.do" method="post">
 			<table class="table">
 				<input type="hidden" name="no" id="no" value="${dto.no}">
@@ -34,5 +35,7 @@
 				<button type="submit" class="mod_btn">수정</button>
 			</div>
 		</form>
+	</div>
+<jsp:include page="../common/footer.jsp"></jsp:include>	
 </body>
 </html>
