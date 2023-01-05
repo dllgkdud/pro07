@@ -23,18 +23,18 @@
 					<th>아이디</th>
 					<td>
 						<input type="text" name="id" id="id" placeholder="아이디를 입력하십시오." required>
-						<button id="check" class="btn">중복 체크</button>
+						<button type="button" class="btn" onclick="check()">중복 체크</button>
 						<input type="hidden" name="idck" id="idck" value="no">
 						<p id="msg">아이디 중복 체크를 진행하여 주십시오.</p>
 					</td>
 				</tr>
 				<tr>
 					<th>비밀번호</th>
-					<td><input type="password" name="pw" id="pw" placeholder="비밀번호를 입력하십시오."></td>
+					<td><input type="password" name="pw" id="pw" placeholder="비밀번호를 입력하십시오." required></td>
 				</tr>
 				<tr>
 					<th>비밀번호 확인</th>
-					<td><input type="password" name="pw2" id="pw2" placeholder="비밀번호를 다시 입력하십시오."></td>
+					<td><input type="password" name="pw2" id="pw2" placeholder="비밀번호를 다시 입력하십시오." required></td>
 				</tr>
 				<tr>
 					<th>이름</th>
@@ -71,37 +71,34 @@
 	});
 	</script>
 	<script>
-	$().ready(function(){
-		$("#check").click(function(){
-			var params = {	id : $("#id").val()	}
-			$.ajax({
-				url:"${path1 }/users/check",
-				type:"post",
-				dataType:"json",
-				data:params
-			})
-			.done(function(result){
-					console.log(result.result);
-					var idChk = result.result;
-					if(idChk==false){
-						$("#idck").val("no");
-						$("#msg").html("<strong style='color:red'>이미 사용 중인 아이디 입니다.</strong>");
-						$("#id").focus();
-					} else if(idChk==true){
-						$("#idck").val("yes");
-						$("#msg").html("<strong style='color:blue'>사용 가능한 아이디 입니다.</strong>");
-					} else if(idck==""){
-						$("#msg").html("<strong>아이디가 확인되지 않았습니다.</strong>");
-					}
-				}
-			)
-			.fail(function(result, xhr, status, errorThrown){
-				console.log(xhr.status+". 회원 목록을 불러올 수 없습니다.");
+	function check(){
+		if($("#id").val()==""){
+			alert("아이디를 입력하세요.");
+			$("#id").focus();
+			return;
+		}
+		var params = { id : $("#id").val() }
+		$.ajax({
+			url:"${path1 }/users/check",
+			type:"post",
+			dataType:"json",
+			data:params,
+			success:function(result){
+				console.log(result.result);
 				var idChk = result.result;
-				console.log(idChk);
-			});
+				if(idChk==false){
+					$("#idck").val("no");
+					$("#msg").html("<strong style='color:red'>이미 사용 중인 아이디 입니다.</strong>");
+					$("#id").focus();
+				} else if(idChk==true){
+					$("#idck").val("yes");
+					$("#msg").html("<strong style='color:blue'>사용 가능한 아이디 입니다.</strong>");
+				} else if(idck==""){
+					$("#msg").html("<strong>아이디가 확인되지 않았습니다.</strong>");
+				}
+			}
 		});
-	});
+	}
 	</script>
 	<script>
 	$().ready(function(){

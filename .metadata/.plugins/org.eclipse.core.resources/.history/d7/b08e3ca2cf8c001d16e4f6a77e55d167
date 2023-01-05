@@ -1,0 +1,10 @@
+package kr.go.mofa;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class RestService {
+	Map<String, String> getTest1(String id, String pw) throws Exception;
+}

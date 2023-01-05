@@ -14,7 +14,6 @@ public class UsersServiceImpl implements UsersService {
 	
 	@Autowired
 	UsersDAO usersDao;
-	BCryptPasswordEncoder pwdEncoder;
 	
 	@Override
 	public List<UsersDTO> usersList() throws Exception {
@@ -35,5 +34,4 @@ public class UsersServiceImpl implements UsersService {
 	public UsersDTO login(UsersDTO users) throws Exception {
 		return usersDao.login(users);
 	}
-
 }

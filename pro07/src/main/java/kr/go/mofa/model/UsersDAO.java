@@ -9,5 +9,4 @@ public interface UsersDAO {
 	public UsersDTO usersDetail(String id) throws Exception;
 	public void usersAdd(UsersDTO dto) throws Exception;
 	public UsersDTO login(UsersDTO user) throws Exception;
-	
 }

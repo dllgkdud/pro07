@@ -40,7 +40,7 @@ create table users(
     address varchar(1000),
     regdate datetime default now()
 );
-select * from users;
+select * from users where id='admin'and pw='$2a$10$SSlNTZjvaaQG8VL1PYUXt.iDJ3Qd9g7nJz0ICkR1sxH.aDlRy3H3m';
 drop table users cascade;
 
-insert into users values(1, 'admin','EjirwAY9zs5/2VfMRE9fyA==','관리자','admin@naver.com','경기도 고양시 일산동구 장항동 771', now());
+insert into users(id, pw, name, email, address, regdate) values('admin','EjirwAY9zs5/2VfMRE9fyA==','관리자','admin@naver.com','경기도 고양시 일산동구 장항동 771', now());

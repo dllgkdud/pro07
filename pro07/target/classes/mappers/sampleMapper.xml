@@ -12,4 +12,10 @@
 	<insert id="addSample">
 		insert into sample(id, pw) values #{id}, #{pw}
 	</insert>
+	<update id="updSample">
+		update sample set pw=#{pw} where id=#{id}
+	</update>
+	<delete id="delSample">
+		delete from sample where id=#{id}
+	</delete>
 </mapper>

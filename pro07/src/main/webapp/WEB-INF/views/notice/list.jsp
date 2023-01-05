@@ -27,14 +27,23 @@
 			<c:forEach items="${notice }" var="notice" varStatus="status">
 			<tr>
 				<td>${status.count }</td>
-				<td><a href="${path1 }/notice/one?no=${notice.no }">${notice.title }</a></td>
+				<td>
+				<c:if test="${empty sid }">
+					<span>${notice.title }</span>
+				</c:if>
+				<c:if test="${not empty sid }">
+					<a href="${path1 }/notice/one?no=${notice.no }">${notice.title }</a>
+				</c:if>
+				</td>
 				<td>${notice.dept }</td>
 				<td>${notice.regdate }</td>
 			</tr>
 			</c:forEach>
 		</table>
 		<div class="button_grp">
-			<a href="${path1 }/notice/add.do" class="button">작성</a>
+			<c:if test='${sid eq "admin"}'>
+				<a href="${path1 }/notice/add.do" class="button">작성</a>
+			</c:if>
 		</div>
 	</div>
 <jsp:include page="../common/footer.jsp"></jsp:include>	

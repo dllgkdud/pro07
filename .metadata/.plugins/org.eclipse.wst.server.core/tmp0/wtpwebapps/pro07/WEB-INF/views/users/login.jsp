@@ -17,7 +17,7 @@
 <jsp:include page="../common/header.jsp"></jsp:include>
 	<div class="container">
 		<h2>로그인</h2>
-		<form action="${path1 }/user/login.do" method="post">
+		<form action="${path1 }/users/login.do" method="post">
 			<table class="table">
 				<tr>
 					<th>아이디</th>

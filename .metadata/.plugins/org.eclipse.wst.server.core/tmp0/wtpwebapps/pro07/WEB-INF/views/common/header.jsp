@@ -14,8 +14,17 @@
 			<li class="col-12 col-md-auto mb-2 justify-content-center mb-md-0">이 누리집은 대한민국 공식 전자정부 누리집입니다.</li>
         </ul>
         <div class="dropdown text-end">
-          	<a href="${path1 }/user/login">로그인</a>
-			<a href="${path1 }/user/add">회원가입</a>
+        	<c:if test="${empty sid }">
+	          	<a href="${path1 }/users/login">로그인</a>
+				<a href="${path1 }/users/agree">회원가입</a>
+			</c:if>
+			<c:if test="${not empty sid }">
+				<a href="${path1 }/users/logout">로그아웃</a>
+				<a href="#">회원정보</a>
+				<c:if test='${sid eq "admin"}'>
+					<a href="#">관리자 페이지</a>
+	        	</c:if>
+			</c:if>
         </div>
       </div>
     </div>

@@ -13,6 +13,6 @@
 		select * from users where id = #{id} and pw = #{pw}
 	</select>
 	<insert id="addUsers">
-		insert into users values(#{id}, #{pw}, #{name}, #{email}, #{address}, now())
+		insert into users(id, pw, name, email, address, regdate) values(#{id}, #{pw}, #{name}, #{email}, #{address}, now())
 	</insert>
 </mapper>
