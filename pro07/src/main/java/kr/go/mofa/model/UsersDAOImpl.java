@@ -30,7 +30,7 @@ public class UsersDAOImpl implements UsersDAO {
 	}
 
 	@Override
-	public UsersDTO login(UsersDTO user) throws Exception {
-		return sqlSession.selectOne("users.login", user);
+	public UsersDTO login(String id) throws Exception {
+		return sqlSession.selectOne("users.login", id);
 	}
 }

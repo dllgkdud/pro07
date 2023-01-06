@@ -10,28 +10,33 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>회원 목록 | 외교부</title>
+	<title>${user.name } | 외교부</title>
 	<jsp:include page="../common/head.jsp"></jsp:include>
 </head>
 <body>
 <jsp:include page="../common/header.jsp"></jsp:include>
 	<div class="container">
-		<h2>${user.name } | 외교부</h2>
+		<h2>회원상세</h2>
 		<table class="table">
 			<tr>
 				<th>아이디</th>
-				<td>${user.id }</td>
+				<td>${dto.id }</td>
 			</tr>
 			<tr>
 				<th>이름</th>
+				<td>${dto.name }</td>
+			</tr>
+			<tr>
 				<th>이메일</th>
+				<td>${dto.email }</td>
+			</tr>
+			<tr>
 				<th>주소</th>
+				<td>${dto.address }</td>
+			</tr>
+			<tr>
 				<th>가입일</th>
-				
-				<td>${user.name }</td>
-				<td>${user.email }</td>
-				<td>${user.address }</td>
-				<td>${user.regdate }</td>
+				<td>${dto.regdate }</td>
 			</tr>
 		</table>
 		<div class="button_grp">

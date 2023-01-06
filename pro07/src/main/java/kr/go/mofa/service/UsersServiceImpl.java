@@ -30,7 +30,7 @@ public class UsersServiceImpl implements UsersService {
 	}
 
 	@Override
-	public UsersDTO login(UsersDTO users) throws Exception {
-		return usersDao.login(users);
+	public UsersDTO login(String id) throws Exception {
+		return usersDao.login(id);
 	}
 }

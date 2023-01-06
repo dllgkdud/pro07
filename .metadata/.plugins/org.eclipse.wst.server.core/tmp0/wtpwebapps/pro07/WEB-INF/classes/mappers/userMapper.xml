@@ -10,7 +10,7 @@
 		select * from users where id = #{id}
 	</select>
 	<select id="login" resultType="kr.go.mofa.dto.UsersDTO">
-		select * from users where id = #{id} and pw = #{pw}
+		select * from users where id=#{id}
 	</select>
 	<insert id="addUsers">
 		insert into users(id, pw, name, email, address, regdate) values(#{id}, #{pw}, #{name}, #{email}, #{address}, now())

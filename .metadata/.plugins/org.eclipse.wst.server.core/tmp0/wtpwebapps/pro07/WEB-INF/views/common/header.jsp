@@ -22,7 +22,7 @@
 				<a href="${path1 }/users/logout">로그아웃</a>
 				<a href="#">회원정보</a>
 				<c:if test='${sid eq "admin"}'>
-					<a href="#">관리자 페이지</a>
+					<a href="${path1 }/users/list">관리자 페이지</a>
 	        	</c:if>
 			</c:if>
         </div>

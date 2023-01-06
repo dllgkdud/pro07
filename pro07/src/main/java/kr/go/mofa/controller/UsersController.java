@@ -16,6 +16,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -29,7 +30,7 @@ public class UsersController {
 	private static final Logger log = LoggerFactory.getLogger(UsersController.class);
 	
 	@Autowired UsersService usersService;
-	//@Inject BCryptPasswordEncoder pwdEncoder;
+	@Inject BCryptPasswordEncoder bcryptPasswordEncoder;
 	@Autowired HttpSession session;
 	
 	@GetMapping("list")
@@ -37,6 +38,13 @@ public class UsersController {
 		List<UsersDTO> user = usersService.usersList();
 		model.addAttribute("user", user);
 		return "users/list";
+	}
+	
+	@GetMapping("one")
+	public String usersOne(@RequestParam("id") String id, Model model) throws Exception {
+		UsersDTO dto = usersService.usersDetail(id);
+		model.addAttribute("dto", dto);
+		return "users/one";
 	}
 	
 	@GetMapping("agree")
@@ -51,9 +59,9 @@ public class UsersController {
 	
 	@PostMapping("add.do")
 	public String usersAdd(UsersDTO dto, Model model) throws Exception {
-		BCryptPasswordEncoder pwdEncoder = new BCryptPasswordEncoder();
+		//BCryptPasswordEncoder pwdEncoder = new BCryptPasswordEncoder();
 		String pw = dto.getPw();
-		String pwd = pwdEncoder.encode(pw);
+		String pwd = bcryptPasswordEncoder.encode(pw);
 		dto.setPw(pwd);
 		usersService.usersAdd(dto);
 		System.out.println(dto);
@@ -85,25 +93,23 @@ public class UsersController {
 	}
 	
 	@PostMapping("login.do")
-	public String usersLogin(@RequestParam("id") String id, @RequestParam("pw") String pw) throws Exception {
-		BCryptPasswordEncoder pwdEncoder = new BCryptPasswordEncoder();
-		UsersDTO users = new UsersDTO();
-		users.setId(id);
-		users.setPw(pw);
-		UsersDTO login = usersService.login(users);
-		log.info(users.getPw());
-		log.info(login.getPw());
-		boolean success = pwdEncoder.matches(users.getPw(), login.getPw());
-		if(success && login!=null) { 
+	public String usersLogin(@ModelAttribute("dto") UsersDTO dto, Model model) throws Exception {
+		//BCryptPasswordEncoder pwdEncoder = new BCryptPasswordEncoder();
+		UsersDTO login = usersService.login(dto.getId());
+		String pw = bcryptPasswordEncoder.encode(dto.getPw());
+		log.info("로그인 정보 : "+login.getPw());
+		log.info("비밀번호 정보 : "+pw);
+		boolean ok = bcryptPasswordEncoder.matches(dto.getPw(), login.getPw());
+		if(login!=null && ok) { 
 			session.setAttribute("users", login);
-			session.setAttribute("sid", id);
+			session.setAttribute("sid", dto.getId());
 			return "redirect:/";
-		} else { 
-			return "redirect:login"; 
-		} 
+		} else {
+			return "redirect:login";
+		}
 	}
 	
-	@PostMapping("logout")
+	@RequestMapping("logout")
 	public String usersLogout(HttpSession session) throws Exception {
 		session.invalidate();
 		return "redirect:/";
