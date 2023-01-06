@@ -1,0 +1,6 @@
+package kr.go.mofa.service;
+
+@Service
+public class QnaServiceImpl implements QnaService {
+
+}

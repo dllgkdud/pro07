@@ -37,4 +37,16 @@ public class RestService {
 	public SampleDTO getSample(String id) throws Exception {
 		return restDao.one(id);
 	}
+
+	public void addSample(SampleDTO sample) throws Exception {
+		restDao.add(sample);
+	}
+	
+	public void updSample(SampleDTO sample) throws Exception {
+		restDao.upd(sample);
+	}
+	
+	public void delSample(String id) throws Exception {
+		restDao.del(id);
+	}
 }

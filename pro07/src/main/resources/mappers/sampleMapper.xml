@@ -10,7 +10,7 @@
 		select * from sample where id = #{id}
 	</select>
 	<insert id="addSample">
-		insert into sample(id, pw) values #{id}, #{pw}
+		insert into sample values (#{id}, #{pw}, now())
 	</insert>
 	<update id="updSample">
 		update sample set pw=#{pw} where id=#{id}

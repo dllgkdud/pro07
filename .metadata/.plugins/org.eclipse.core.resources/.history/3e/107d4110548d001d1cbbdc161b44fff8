@@ -1,0 +1,14 @@
+package kr.go.mofa.dto;
+
+public class QnaDTO {
+	//번호, 제목, 내용, 부서, 조회수, 작성일, 그룹번호, 답변, 깊이
+	private int no;
+	private String title;
+    private String content;
+    private String dept;
+    private int hits;
+    private String regdate;
+    private int grp;
+    private int step;
+    private int indent;
+}

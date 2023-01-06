@@ -27,6 +27,28 @@
 		</section><br>
 		<section class="post">
 			<h2>Post</h2>
+			<form name="add" action="add" method="post">
+				<input type="text" id="id" name="id" placeholder="id">
+				<input type="password" id="pw" name="pw" placeholder="pw">
+				<input type="submit" value="작성">
+			</form>
+		</section><br>
+		<section class="put">
+			<h2>Put</h2>
+			<form name="upd" action="upd" method="post">
+				<input type="hidden" name="_method" value="PUT"/>
+				<input type="text" id="id" name="id" value="lhy">
+				<input type="password" id="pw" name="pw" value="1111">
+				<input type="submit" value="수정">
+			</form>
+		</section>
+		<section class="delete">
+			<h2>Delete</h2>
+			<form action="del" method="POST">
+				<input type="hidden" name="_method" value="DELETE"/>
+				<input type="text" id="id" name="id" value="lhy">
+				<input type="submit" value="삭제">
+			</form>
 		</section>
 	</div>
 </body>

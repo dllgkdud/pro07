@@ -66,6 +66,7 @@
 		  		<ul>
 		  			<li><a href="${path1 }/notice/list">공지사항</a></li>
 		  			<li><a href="#">자료실</a></li>
+		  			<li><a href="${path1 }/qna/list">질문 및 답변</a></li>
 		  		</ul>
 			</div>
 			<div class="tab-pane fade m-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">

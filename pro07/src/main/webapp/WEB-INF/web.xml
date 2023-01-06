@@ -30,7 +30,7 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-	<!-- 한글깨짐 방지 -->
+	<!-- UTF-8 인코딩 필터 -->
 	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -39,6 +39,22 @@
 			<param-value>UTF-8</param-value>
 		</init-param>
 	</filter>
+	
+	<!-- 주입 필터 설정    
+	<filter> 
+	      <filter-name>InjectionFilter</filter-name> 
+	      <filter-class>md.cms.servlet.JwxeFilter</filter-class> 
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter> 
+	
+	<filter-mapping> 
+		<filter-name>InjectionFilter</filter-name> 
+		<url-pattern>*.jsp</url-pattern> 
+	</filter-mapping> -->
+	
 	<filter-mapping>
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>

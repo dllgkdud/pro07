@@ -22,7 +22,8 @@
 				<th>번호</th>
 				<th>아이디</th>
 				<th>이름</th>
-				<th>부서명</th>
+				<th>이메일</th>
+				<th>주소</th>
 				<th>가입일</th>
 			</tr>
 			<c:forEach items="${user }" var="user" varStatus="status">
@@ -30,7 +31,8 @@
 				<td>${status.count }</td>
 				<td><a href="${path1 }/users/one?id=${user.id }">${user.id }</a></td>
 				<td>${user.name }</td>
-				<td>${user.dept }</td>
+				<td>${user.email }</td>
+				<td>${user.address }</td>
 				<td>${user.regdate }</td>
 			</tr>
 			</c:forEach>

@@ -1,9 +1,0 @@
-package kr.go.mofa.model;
-
-import java.util.List;
-
-import org.springframework.stereotype.Repository;
-
-public interface UsersDAO {
-	public List<UsersDTO> usersList() throws Exception;
-}

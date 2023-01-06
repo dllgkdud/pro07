@@ -12,7 +12,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -92,5 +95,31 @@ public class RestTest {
 	public SampleDTO test7(@PathVariable("id") String id) throws Exception {
 		SampleDTO user = restService.getSample(id);
 		return user;
+	}
+	
+	//add sample
+	@PostMapping("add")
+	@ResponseBody
+	public SampleDTO add(@ModelAttribute("sample") SampleDTO sample) throws Exception {
+		restService.addSample(sample);
+		return sample;
+	}
+	
+	//upd sample
+	//uri:localhost:8097/upd/{id}
+	@PutMapping("upd")
+	@ResponseBody
+	public String updSample(@ModelAttribute("sample") SampleDTO sample) throws Exception {
+		restService.updSample(sample);
+		return "수정 성공";
+	}
+	
+	//del sample
+	//uri:localhost:8097/del/{id}
+	@PutMapping("del")
+	@ResponseBody
+	public String delSample(@PathVariable String id) throws Exception {
+		restService.delSample(id);
+		return "삭제 성공";
 	}
 }
