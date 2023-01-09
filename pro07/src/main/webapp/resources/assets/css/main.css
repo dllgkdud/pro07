@@ -30,4 +30,11 @@
 label[for="ck2"] { margin-bottom:1rem; }
 label[for="ck3"] { margin-top:1rem; }
 
+/* page */
+#tit_eff { color: #0c3975; }
+.his_info > ul { position: relative; padding-left: 50px; }
+.his_info > ul:before { content: ''; position: absolute; left: 50px; top: 24px; width: 1px; height: 100%; background-color: #dfdfdf; }
+li:before { position: absolute; left: 0; top: 0.6em; width: 5px; height: 2px; display: inline-block; content: ''; background-color: #a5b4c3; }
+
 /* footer */
+div.nav span { padding: 0.8rem; }

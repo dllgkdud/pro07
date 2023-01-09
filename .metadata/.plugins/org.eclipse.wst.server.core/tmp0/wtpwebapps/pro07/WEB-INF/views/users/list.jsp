@@ -38,7 +38,9 @@
 			</c:forEach>
 		</table>
 		<div class="button_grp">
+			<c:if test='${sid eq "admin"}'>
 			<a href="${path1 }/users/add.do" class="button">등록</a>
+			</c:if>
 		</div>
 	</div>
 <jsp:include page="../common/footer.jsp"></jsp:include>	

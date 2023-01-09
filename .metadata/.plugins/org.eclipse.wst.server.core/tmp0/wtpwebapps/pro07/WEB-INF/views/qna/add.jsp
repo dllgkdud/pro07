@@ -10,13 +10,13 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>공지사항 작성 | 외교부</title>
+	<title>질문게시판 작성 | 외교부</title>
 	<jsp:include page="../common/head.jsp"></jsp:include>
 </head>
 <body>
 <jsp:include page="../common/header.jsp"></jsp:include>
 	<div class="container">
-		<h2>공지사항</h2>
+		<h2>질문게시판</h2>
 		<form action="${path1 }/qna/add.do" method="post">
 			<table class="table">
 				<tr>

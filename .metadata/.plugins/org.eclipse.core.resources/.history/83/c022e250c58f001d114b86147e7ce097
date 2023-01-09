@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions" %>
+<c:set var="path1" value="${pageContext.request.contextPath }" />
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>외교부 소개 | 외교부</title>
+	<jsp:include page="../common/head.jsp"></jsp:include>
+</head>
+<body>
+<jsp:include page="../common/header.jsp"></jsp:include>
+	<div class="container">
+		<h2>외교부 소개</h2>
+		<div class="table">
+			<h3 id="tit_eff">외교정책 목표</h3>
+			<div class="policy_info">
+				외교부는 ‘다시 도약하는 대한민국, 함께 잘 사는 국민의 나라’라는 국가비전 아래 ‘자유, 평화, 번영에 기여하는 글로벌 중추국가’라는 국정목표를 충실히 이행하기 위하여, 다음 과제에 외교 역량을 집중하고자 합니다.
+			</div>
+			<h3 style="font-size:8rem; font-weight:800; text-align:right; color:rgba(0, 0, 0, 0.08);">MOFA</h3>
+			<div class="policy_content">
+				<ol>
+					<li>
+						<h3>북한 비핵화 추진</h3>
+						<p>북한의 완전하고 검증가능한 비핵화를 통해 한반도에 지속가능한 평화 구현</p>
+					</li>
+					
+				</ol>
+			</div>
+		</div>
+	</div>
+<jsp:include page="../common/footer.jsp"></jsp:include>	
+</body>
+</html>

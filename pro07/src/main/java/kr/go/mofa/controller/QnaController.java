@@ -2,8 +2,6 @@ package kr.go.mofa.controller;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -56,9 +54,16 @@ public class QnaController {
 		return "qna/ans";
 	}
 	
-	@GetMapping("upd.do")
+	@PostMapping("ans.do")
+	public String ans(@ModelAttribute("qna") QnaDTO qna) throws Exception {
+		qnaService.ansQna(qna);
+		return "redirect:/qna/list";
+	}
+	
+	@GetMapping("upd")
 	public String qna(@RequestParam("no") int no, Model model) throws Exception { QnaDTO dto = qnaService.qnaOne(no);
-		model.addAttribute("dto", dto); return "qna/update"; 
+		model.addAttribute("dto", dto);
+		return "qna/update"; 
 	}
 
 	@PostMapping("upd.do")

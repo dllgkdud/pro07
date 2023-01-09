@@ -20,7 +20,7 @@
 			</c:if>
 			<c:if test="${not empty sid }">
 				<a href="${path1 }/users/logout">로그아웃</a>
-				<a href="#">회원정보</a>
+				<a href="${path1 }/users/info">회원정보</a>
 				<c:if test='${sid eq "admin"}'>
 					<a href="${path1 }/users/list">관리자 페이지</a>
 	        	</c:if>
@@ -71,9 +71,9 @@
 			</div>
 			<div class="tab-pane fade m-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 		  		<ul>
-		  			<li><a href="#">외교부 소개</a></li>
-		  			<li><a href="#">외교정책 목표</a></li>
-		  			<li><a href="#">오시는길</a></li>
+		  			<li><a href="${path1 }/page/intro.do">외교부 소개</a></li>
+		  			<li><a href="${path1 }/page/policy.do">외교정책 목표</a></li>
+		  			<li><a href="${path1 }/page/map.do">오시는길</a></li>
 		  		</ul>
 			</div>
 		</div>

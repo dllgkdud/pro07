@@ -32,6 +32,7 @@ insert into notice(title,content,dept,regdate) values('2022년 기록관리기�
 update notice set hits=hit+1 where no=1;
 drop table notice cascade;
 
+
 create table users(
 	no int auto_increment primary key,
     id varchar(50),
@@ -41,11 +42,13 @@ create table users(
     address varchar(1000),
     regdate datetime default now()
 );
+select * from users;
 select * from users where id='admin'and pw='$2a$10$SSlNTZjvaaQG8VL1PYUXt.iDJ3Qd9g7nJz0ICkR1sxH.aDlRy3H3m';
 update users set pw='$2a$10$SSlNTZjvaaQG8VL1PYUXt.iDJ3Qd9g7nJz0ICkR1sxH.aDlRy3H3m' where id='admin';
+delete from users;
 drop table users cascade;
 commit;
-insert into users(id, pw, name, email, address, regdate) values('admin','EjirwAY9zs5/2VfMRE9fyA==','관리자','admin@naver.com','경기도 고양시 일산동구 장항동 771', now());
+insert into users(id, pw, name, email, address, regdate) values('admin','$2a$10$SSlNTZjvaaQG8VL1PYUXt.iDJ3Qd9g7nJz0ICkR1sxH.aDlRy3H3m','관리자','admin@naver.com','경기도 고양시 일산동구 장항동 771', now());
 
 
 create table qna (
@@ -68,7 +71,6 @@ delete from qna where no=8;
 
 insert into qna(title, content, dept, regdate, grp, step, indent) values('테스트3', '테스트3의 내용입니다.', '이하영', now(), (select ifnull(max(grp)+1, 1) from qna q), 0, 1);
 insert into qna(title, content, dept, regdate, grp, step, indent) values('답변 테스트3', '답변 테스트3의 내용입니다.', '외교사료팀', now(), (select ifnull(max(grp), 1) from qna q), 1, 1);
-
 
 create table data (
 	uuid varchar(100) not null,

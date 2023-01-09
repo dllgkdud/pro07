@@ -16,7 +16,7 @@
 <body>
 <jsp:include page="../common/header.jsp"></jsp:include>
 	<div class="container">
-		<h2>QnA</h2>
+		<h2>질문게시판</h2>
 		<table class="table">
 			<tr>
 				<th>번호</th>
@@ -39,8 +39,10 @@
 					<c:if test="${empty sid }">
 						<span>${qna.title }</span>
 					</c:if>
-					<c:if test='${sid eq qna.dept || sid eq "admin" }'>
-						<a href="${path1 }/qna/one?no=${qna.no }">${qna.title }</a>
+					<c:if test="${not empty sid }">
+						<c:if test='${sid eq qna.dept || sid eq "admin" }'>
+							<a href="${path1 }/qna/one?no=${qna.no }">${qna.title }</a>
+						</c:if>
 					</c:if>
 				</c:if>
 				<c:if test="${qna.indent eq 0 }">
@@ -53,11 +55,7 @@
 			</c:forEach>
 		</table>
 		<div class="button_grp">
-			<a href="${path1 }/qna/add" class="button">작성</a>
-			<!--<c:if test='${sid eq "admin"}'>
-				<a href="${path1 }/qna/add" class="button">작성</a>
-				<a href="${path1 }/qna/ans" class="button">답변</a>
-			</c:if>-->
+			<a href="${path1 }/qna/add" class="button">질문</a>
 		</div>
 	</div>
 <jsp:include page="../common/footer.jsp"></jsp:include>	

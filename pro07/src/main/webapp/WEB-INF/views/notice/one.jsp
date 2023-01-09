@@ -28,12 +28,10 @@
 		</div>
 		<div class="button_group">
 			<a href="${path1 }/notice/list" class="list_btn">목록</a>
-			<a href="${path1 }/notice/del.do?no=${dto.no}" class="del_btn">삭제</a>
-			<a href="${path1 }/notice/upd.do?no=${dto.no}" class="upd_btn">수정</a>
-			<!--<c:if test='${sid eq dto.dept || sid eq "admin"}'>
+			<c:if test='${sid eq dto.dept || sid eq "admin"}'>
 				<a href="${path1 }/notice/del.do?no=${dto.no}" class="del_btn">삭제</a>
 				<a href="${path1 }/notice/upd.do?no=${dto.no}" class="mod_btn">수정</a>
-			</c:if>-->
+			</c:if>
 		</div>
 	</div>
 <jsp:include page="../common/footer.jsp"></jsp:include>	

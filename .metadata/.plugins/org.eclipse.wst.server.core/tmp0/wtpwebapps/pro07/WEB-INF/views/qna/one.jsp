@@ -16,7 +16,7 @@
 <body>
 <jsp:include page="../common/header.jsp"></jsp:include>
 	<div class="container">
-		<h2>질문 게시판</h2>
+		<h2>질문게시판</h2>
 		<div class="table">
 			<h3>${dto.title }</h3>
 			<div class="qna_info">
@@ -28,14 +28,11 @@
 		</div>
 		<div class="button_group">
 			<a href="${path1 }/qna/list" class="list_btn">목록</a>
-			<a href="${path1 }/qna/del.do?grp=${dto.grp}" class="del_btn">삭제</a>
-			<a href="${path1 }/qna/upd.do?no=${dto.no}" class="mod_btn">수정</a>
-			<a href="${path1 }/qna/ans" class="button">답변</a>
-			<!--<c:if test='${sid eq dto.dept || sid eq "admin" }'>
-				<a href="${path1 }/qna/del.do?no=${dto.no}" class="del_btn">삭제</a>
+			<c:if test='${sid eq dto.dept || sid eq "admin" }'>
+				<a href="${path1 }/qna/del.do?grp=${dto.grp}" class="del_btn">삭제</a>
 				<a href="${path1 }/qna/upd.do?no=${dto.no}" class="mod_btn">수정</a>
 				<a href="${path1 }/qna/ans" class="button">답변</a>
-			</c:if>-->
+			</c:if>
 		</div>
 	</div>
 <jsp:include page="../common/footer.jsp"></jsp:include>	

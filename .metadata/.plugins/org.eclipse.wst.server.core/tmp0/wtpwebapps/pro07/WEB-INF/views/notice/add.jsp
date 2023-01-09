@@ -29,7 +29,7 @@
 				</tr>
 				<tr>
 					<th>부서명</th>
-					<td><input type="text" name="dept" id="dept" placeholder="부서를 입력하십시오." required></td>
+					<td><input type="text" name="dept" id="dept" placeholder="부서를 입력하십시오." value="${dto.dept }" required></td>
 				</tr>
 			</table>
 			<div class="button_group">

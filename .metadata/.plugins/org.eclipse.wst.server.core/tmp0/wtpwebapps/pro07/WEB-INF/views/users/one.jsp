@@ -40,7 +40,11 @@
 			</tr>
 		</table>
 		<div class="button_grp">
-			<a href="${path1 }/users/add.do" class="button">등록</a>
+			<a href="${path1 }/users/list" class="list_btn">목록</a>
+			<c:if test='${sid eq dto.id || sid eq "admin"}'>
+				<a href="${path1 }/users/upd?id=${dto.id}" class="upd_btn">수정</a>
+				<a href="${path1 }/users/del.do?id=${dto.id}" class="del_btn">삭제</a>
+			</c:if>
 		</div>
 	</div>
 <jsp:include page="../common/footer.jsp"></jsp:include>	

@@ -64,7 +64,7 @@ public class NoticeController {
 	}
 	
 	@PostMapping("upd.do")
-	public String boardUpd(HttpServletRequest request, Model model) throws Exception {
+	public String noticeUpd(HttpServletRequest request, Model model) throws Exception {
 		int no = Integer.parseInt(request.getParameter("no"));
 		NoticeDTO notice = new NoticeDTO();
 		notice.setNo(no);

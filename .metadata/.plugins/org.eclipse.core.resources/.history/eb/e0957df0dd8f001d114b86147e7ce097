@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="users">
+	<select id="usersList" resultType="kr.go.mofa.dto.UsersDTO">
+		select * from users
+	</select>
+	<select id="usersOne" resultType="kr.go.mofa.dto.UsersDTO">
+		select * from users where id = #{id}
+	</select>
+	<select id="login" resultType="kr.go.mofa.dto.UsersDTO">
+		select * from users where id=#{id}
+	</select>
+	<insert id="addUsers">
+		insert into users(id, pw, name, email, address, regdate) values(#{id}, #{pw}, #{name}, #{email}, #{address}, now())
+	</insert>
+	<update id="updUsers">
+		update users set pw=#{pw}, name=#{name}, email=#{email}, address=#{address} where=id=#{id}
+	</update>
+	<delete>
+		delete from users where id=#{id}
+	</delete>
+</mapper>

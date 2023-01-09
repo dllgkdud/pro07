@@ -16,7 +16,7 @@
 <body>
 <jsp:include page="../common/header.jsp"></jsp:include>
 	<div class="container">
-		<h2>공지사항</h2>
+		<h2>질문게시판</h2>
 		<form action="${path1 }/qna/upd.do" method="post">
 			<table class="table">
 				<input type="hidden" name="no" id="no" value="${dto.no}">

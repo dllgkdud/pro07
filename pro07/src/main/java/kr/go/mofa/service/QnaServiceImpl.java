@@ -35,6 +35,11 @@ public class QnaServiceImpl implements QnaService {
 	}
 
 	@Override
+	public void ansQna(QnaDTO qna) throws Exception {
+		qnaDao.ansQna(qna);
+	}
+
+	@Override
 	public void updQna(QnaDTO qna) throws Exception {
 		qnaDao.updQna(qna);
 	}

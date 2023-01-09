@@ -24,6 +24,7 @@
 	<resources mapping="/data/**" location="/WEB-INF/views/data" />
 	<resources mapping="/reservate/**" location="/WEB-INF/views/reservate" />
 	<resources mapping="/research/**" location="/WEB-INF/views/research" />
+	<resources mapping="/page/**" location="/WEB-INF/views/page" />
 	
 	<!-- sample mapping test -->
 	<resources mapping="/sample/**" location="/WEB-INF/views/sample" />
