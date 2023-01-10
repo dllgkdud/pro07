@@ -15,6 +15,7 @@ insert into sample value('kim', '1111', now());
 insert into sample value('lee', '2222', now());
 insert into sample value('park', '3333', now());
 insert into sample value('choi', '4444', now());
+drop table sample;
 
 
 create table notice(
