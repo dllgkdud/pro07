@@ -21,7 +21,7 @@
 			<table class="table">
 				<tr>
 					<th>제목</th>
-					<td><input type="text" name="title" id="title" placeholder="제목을 입력하십시오." required></td>
+					<td><input type="text" name="title" id="title" placeholder="제목을 입력하십시오." value="re: " required></td>
 				</tr>
 				<tr>
 					<th>공개여부</th>

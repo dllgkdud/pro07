@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="data">
+	<select id="dataList" resultType="kr.go.mofa.dto.DataDTO">
+		select * from data
+	</select>
+	<select id="dataOne" resultType="kr.go.mofa.dto.DataDTO">
+		select * from data where no = #{no}
+	</select>
+	<insert id="adddata">
+		
+	</insert>
+	<update id="upddata">
+		
+	</update>
+	<delete id="deldata">
+		
+	</delete>
+</mapper>

@@ -8,7 +8,7 @@
 <footer>
 	<div class="nav container">
 		<img src="${path1 }/resources/assets/images/f_logo.png">
-		<div class="col-12 col-lg-auto me-lg-auto mb-2">
+		<div class="col-12 col-lg-auto me-lg-auto mt-2 pl-3">
 			<span>누리집 이용안내</span>
 			<span>개인정보처리방침</span>
 		</div>

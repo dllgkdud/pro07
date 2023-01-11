@@ -80,3 +80,4 @@ create table data (
     filetype varchar(3) default "O",
     bno int
 );
+select * from data;

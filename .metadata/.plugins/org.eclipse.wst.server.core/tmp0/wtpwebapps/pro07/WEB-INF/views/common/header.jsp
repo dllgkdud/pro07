@@ -65,7 +65,7 @@
 		  	<div class="tab-pane fade m-5" id="notice" role="tabpanel" aria-labelledby="notice-tab">
 		  		<ul>
 		  			<li><a href="${path1 }/notice/list">공지사항</a></li>
-		  			<li><a href="#">자료실</a></li>
+		  			<li><a href="${path1 }/data/up1">자료실</a></li>
 		  			<li><a href="${path1 }/qna/list">질문 및 답변</a></li>
 		  		</ul>
 			</div>

@@ -8,3 +8,23 @@
 
 1월 06, 2023 18:30:12.44 NEW SESSION
 1월 06, 2023 18:30:12.44 [5536:1824:0106/183012.440:ERROR:device_event_log_impl.cc(215)] [18:30:12.441] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+1월 11, 2023 10:04:29.08 NEW SESSION
+1월 11, 2023 10:04:29.08 [15416:2696:0111/100429.083:ERROR:device_event_log_impl.cc(215)] [10:04:29.083] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+1월 11, 2023 10:06:37.90 [15980:3636:0111/100637.908:ERROR:device_event_log_impl.cc(215)] [10:06:37.908] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+1월 11, 2023 10:47:19.53 [15980:3636:0111/104719.534:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 11, 2023 15:26:10.89 [1756:13920:0111/152610.896:ERROR:device_event_log_impl.cc(215)] [15:26:10.896] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+1월 11, 2023 16:12:07.34 [12776:6552:0111/161207.346:ERROR:device_event_log_impl.cc(215)] [16:12:07.346] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+1월 11, 2023 16:41:36.63 [12776:6552:0111/164136.638:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 11, 2023 17:05:51.83 [12776:6552:0111/170551.834:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 11, 2023 17:10:50.74 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+1월 11, 2023 17:11:07.41 [12776:6552:0111/171107.412:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 11, 2023 17:11:19.42 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+1월 11, 2023 17:11:29.79 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+1월 11, 2023 17:11:39.91 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+1월 11, 2023 17:11:47.00 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+1월 11, 2023 17:11:53.65 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+1월 11, 2023 17:18:28.94 [12776:6552:0111/171828.941:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 11, 2023 17:18:40.49 [12776:6552:0111/171840.494:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 11, 2023 17:47:27.15 [12776:6552:0111/174727.156:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 11, 2023 18:15:45.07 [12776:6552:0111/181545.079:ERROR:sharing_service.cc(252)] Device un-registration failed with fatal error

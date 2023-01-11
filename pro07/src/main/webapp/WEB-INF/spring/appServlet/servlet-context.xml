@@ -14,6 +14,7 @@
 
 	<!-- connect authority -->
 	<resources mapping="/resources/**" location="/resources/" />
+	<resources mapping="/upload/**" location="/resources/upload" />
 	
 	<resources mapping="/common/**" location="/WEB-INF/views/common" />
 	<resources mapping="/include/**" location="/WEB-INF/views/include" />
