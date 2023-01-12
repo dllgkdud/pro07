@@ -1,0 +1,56 @@
+/*# sourceURL=resources/assets/css/main.css */
+@charset "UTF-8";
+
+/* media */
+@media screen and (max-width:767px) {
+  body, html { margin: 0; padding: 0; }
+  .container { display: flex; flex-direction: row; }
+  .container .flex-wrap { flex-basis: 767px; }
+  .player .viewer { max-width:100vw;d width:auto; }
+  i > img {  max-width: 100vw; height: auto; }
+  .east_area { display: block; }
+}
+@media screen and (min-width:768px) and (max-width:959px){
+  body, html { margin: 0; padding: 0; }
+  .player .viewer { max-width:100vw; width:auto; }
+  i > img { max-width: 100vw; height: auto; }
+}
+@media screen and (min-width:960px) {
+  body, html { margin: 0; padding: 0; }
+  .player .viewer { max-width:100vw; width:auto; }
+  i > img { min-width: 100vw;  height: auto; }
+}
+
+/* header */
+.nav-tabs .nav-link { border: none; }
+.nav-tabs .nav-link:hover { border-bottom: 2px solid #a47e4f; }
+
+/* main */
+.ml-3 { margin-left: 1rem!important; }
+b { color: #917c62; }
+.sns_channel { white-space: nowrap; overflow-x: auto; overflow-y: hidden; font-size: 0; line-height: 0; }
+.sns_channer > ol > li { padding: 2px; text-align: center; margin-right: 42px; width: 416px; display: inline-block;
+vertical-align: top; line-height: 1.4; font-size: 16px; }
+.sns_channel ol > li div[tabindex] { overflow-x: hidden; overflow-y: auto; width: 100%;
+position: relative; z-index: 1; background-color: #fff; }
+.center { text-align: center; }
+.east_area > li.dokdo { background-image: url(https://www.mofa.go.kr/www-new/css/../images/main/bg_east_dokdo.png); }
+.east_area > li { margin-bottom: 40px; height: 260px; padding: 43px 50px 0; position: relative;
+background-repeat: no-repeat; background-size: cover; background-position: center; }
+.east_area > li.sea { background-image: url(https://www.mofa.go.kr/www-new/css/../images/main/bg_east_sea.png); }
+.east_area > li:last-of-type { margin-bottom: 0; }
+
+/* agree */
+.agree { width: 90vw; white-space: pre-wrap; margin: 2rem 5rem; padding: 10px; border: 1px solid #eee; height: 400px; overflow-y: auto; }
+.agree_ck { text-align: left; padding-left: 1rem; }
+label[for="ck2"] { margin-bottom:1rem; }
+label[for="ck3"] { margin-top:1rem; }
+
+/* page */
+#tit_eff { color: #0c3975; }
+.his_info > ul { position: relative; padding-left: 50px; }
+.his_info > ul:before { content: ''; position: absolute; left: 50px; top: 24px; width: 1px; height: 100%; background-color: #dfdfdf; }
+li:before { position: absolute; left: 0; top: 0.6em; width: 5px; height: 2px; display: inline-block; content: ''; background-color: #a5b4c3; }
+
+/* footer */
+div.nav span { padding: 0.8rem; }

@@ -29,7 +29,7 @@
 				<td>${status.count }</td>
 				<td>
 				<c:if test="${empty sid }">
-					<span>${notice.title }</span>
+					<a href="${path1 }/users/login" onclick='alert("로그인이 필요합니다.")'>${notice.title }</a>
 				</c:if>
 				<c:if test="${not empty sid }">
 					<a href="${path1 }/notice/one?no=${notice.no }">${notice.title }</a>

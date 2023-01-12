@@ -46,7 +46,8 @@ create table users(
 select * from users;
 select * from users where id='admin'and pw='$2a$10$SSlNTZjvaaQG8VL1PYUXt.iDJ3Qd9g7nJz0ICkR1sxH.aDlRy3H3m';
 update users set pw='$2a$10$SSlNTZjvaaQG8VL1PYUXt.iDJ3Qd9g7nJz0ICkR1sxH.aDlRy3H3m' where id='admin';
-delete from users;
+delete from users where id='test';
+set sql_safe_updates=0;
 drop table users cascade;
 commit;
 insert into users(id, pw, name, email, address, regdate) values('admin','$2a$10$SSlNTZjvaaQG8VL1PYUXt.iDJ3Qd9g7nJz0ICkR1sxH.aDlRy3H3m','관리자','admin@naver.com','경기도 고양시 일산동구 장항동 771', now());

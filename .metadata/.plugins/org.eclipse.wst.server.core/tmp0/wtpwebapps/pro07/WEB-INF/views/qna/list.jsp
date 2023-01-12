@@ -37,7 +37,8 @@
 				<td>
 				<c:if test="${qna.indent eq 1 }">
 					<c:if test="${empty sid }">
-						<span>${qna.title }</span>
+						<span onclick='alert("작성자만 확인할 수 있습니다.")' style="cursor: pointer;">
+						${qna.title }</span>
 					</c:if>
 					<c:if test="${not empty sid }">
 						<c:if test='${sid eq qna.dept || sid eq "admin" }'>
@@ -54,9 +55,11 @@
 			</tr>
 			</c:forEach>
 		</table>
-		<div class="button_grp">
-			<a href="${path1 }/qna/add" class="button">질문</a>
-		</div>
+		<c:if test="${not empty sid }">
+			<div class="button_grp">
+				<a href="${path1 }/qna/add" class="button">질문</a>
+			</div>
+		</c:if>
 	</div>
 <jsp:include page="../common/footer.jsp"></jsp:include>	
 </body>

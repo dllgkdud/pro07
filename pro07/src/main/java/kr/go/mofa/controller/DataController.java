@@ -6,10 +6,6 @@ import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,7 +19,7 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 @Controller
 @RequestMapping("/data/")
 public class DataController {
-	private static final Logger log = LoggerFactory.getLogger(DataController.class);
+	//private static final Logger log = LoggerFactory.getLogger(DataController.class);
 	
 	@GetMapping("/up0")
 	public String up0() {
@@ -31,7 +27,7 @@ public class DataController {
 	}
 	
 	@PostMapping("/up0")
-	public String up0(HttpServletRequest request, HttpServletResponse response) {
+	public String up0(HttpServletRequest request) {
 		String uploadPath="D:/lhy/pro07/pro07/src/main/webapp/resources/upload/data";
 		int maxFileSize = 1024 * 1024 * 10;
 		String encType = "utf-8";
@@ -59,14 +55,14 @@ public class DataController {
 	public String upload1(MultipartHttpServletRequest multipartRequest) throws ServletException, IOException {
 		List<MultipartFile> fileList = multipartRequest.getFiles("file");
 		String uploadPath = "D:/lhy/pro07/pro07/src/main/webapp/resources/upload/data";
-	    log.info("파일 개수 :"+fileList.size());
+	    //log.info("파일 개수 :"+fileList.size());
 	    
 		for (MultipartFile multipartFile : fileList) {
 			if (multipartFile.isEmpty()) {
 				continue;
 			}
 			String uploadFilename = multipartFile.getOriginalFilename();	
-			log.info("업로드 파일 경로 및 이름 : "+uploadFilename);
+			//log.info("업로드 파일 경로 및 이름 : "+uploadFilename);
 			multipartFile.transferTo(new File(uploadPath, uploadFilename));	
 		} // for
 		return "redirect:/";

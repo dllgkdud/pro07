@@ -1,6 +1,0 @@
-package kr.go.mofa;
-
-@Repository
-public class RestDAO {
-
-}

@@ -27,7 +27,7 @@ import kr.go.mofa.service.UsersService;
 @Controller
 @RequestMapping("/users/")
 public class UsersController {
-	private static final Logger log = LoggerFactory.getLogger(UsersController.class);
+	//private static final Logger log = LoggerFactory.getLogger(UsersController.class);
 	
 	@Autowired UsersService usersService;
 	@Inject BCryptPasswordEncoder bcryptPasswordEncoder;
@@ -119,8 +119,8 @@ public class UsersController {
 	public String usersLogin(@ModelAttribute("dto") UsersDTO dto, Model model) throws Exception {
 		UsersDTO login = usersService.login(dto.getId());
 		String pw = bcryptPasswordEncoder.encode(dto.getPw());
-		log.info("로그인 정보 : "+login.getPw());
-		log.info("비밀번호 정보 : "+pw);
+		//log.info("로그인 정보 : "+login.getPw());
+		//log.info("비밀번호 정보 : "+pw);
 		boolean ok = bcryptPasswordEncoder.matches(dto.getPw(), login.getPw());
 		if(login!=null && ok) { 
 			session.setAttribute("users", login);

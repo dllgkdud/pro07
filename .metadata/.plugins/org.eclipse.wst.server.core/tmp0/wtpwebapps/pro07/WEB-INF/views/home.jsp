@@ -179,7 +179,7 @@
 	</div>
 	<div class="container">
 		<div class="sns_channel">
-	    <ol>
+	    <ol style="display: flex;">
 	      	<li class="fb">
 	        	<div tabindex="0">
 		          	<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/mofakr.kr" data-tabs="timeline" data-width="383" data-height="556" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=412&amp;height=556&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmofakr.kr&amp;locale=ko_KR&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=383"><span style="vertical-align: bottom; width: 383px; height: 556px;"><iframe name="f24863e74f54a" width="383px" height="556px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v12.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2f1247f4c1f4%26domain%3Dwww.mofa.go.kr%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.mofa.go.kr%252Ffe00c55e010684%26relation%3Dparent.parent&amp;container_width=412&amp;height=556&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmofakr.kr&amp;locale=ko_KR&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=383" style="border: none; visibility: visible; width: 383px; height: 556px;" class=""></iframe></span></div>
@@ -187,29 +187,32 @@
 	      	</li>
 	      	<li class="tw">
 	        	<div tabindex="0">
-	          		<div class="twitter-timeline twitter-timeline-rendered" style="display: flex; max-width: 383; margin-top: 0px; margin-bottom: 0px;"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 406px; height: 8038px; display: block; flex-grow: 1;" title="Twitter Timeline" src="https://syndication.twitter.com/srv/timeline-profile/screen-name/mofa_kr?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOlsibGlua3RyLmVlIiwidHIuZWUiLCJ0ZXJyYS5jb20uYnIiLCJ3d3cubGlua3RyLmVlIiwid3d3LnRyLmVlIiwid3d3LnRlcnJhLmNvbS5iciJdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOmZhbHNlLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2hvcml6b25fdGltZWxpbmVfMTIwMzQiOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9lZGl0X2JhY2tlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3JlZnNyY19zZXNzaW9uIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2J1c2luZXNzX3ZlcmlmaWVkX2JhZGdlIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19jaGluX3BpbGxzXzE0NzQxIjp7ImJ1Y2tldCI6ImNvbG9yX2ljb25zIiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9yZXN1bHRfbWlncmF0aW9uXzEzOTc5Ijp7ImJ1Y2tldCI6InR3ZWV0X3Jlc3VsdCIsInZlcnNpb24iOm51bGx9LCJ0ZndfbWl4ZWRfbWVkaWFfMTU4OTciOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd19zZW5zaXRpdmVfbWVkaWFfaW50ZXJzdGl0aWFsXzEzOTYzIjp7ImJ1Y2tldCI6ImludGVyc3RpdGlhbCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2R1cGxpY2F0ZV9zY3JpYmVzX3RvX3NldHRpbmdzIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd192aWRlb19obHNfZHluYW1pY19tYW5pZmVzdHNfMTUwODIiOnsiYnVja2V0IjoidHJ1ZV9iaXRyYXRlIiwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2JsdWVfdmVyaWZpZWRfYmFkZ2UiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2xlZ2FjeV90aW1lbGluZV9zdW5zZXQiOnsiYnVja2V0IjpmYWxzZSwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2dvdl92ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19idXNpbmVzc19hZmZpbGlhdGVfYmFkZ2UiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3R3ZWV0X2VkaXRfZnJvbnRlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfX0%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=ko&amp;origin=https%3A%2F%2Fwww.mofa.go.kr%2Fwww%2Fmain.do&amp;sessionId=0c50604f2dcfabf17b4e5339487a7182a8968e65&amp;showHeader=true&amp;showReplies=false&amp;transparent=false&amp;widgetsVersion=a3525f077c700%3A1667415560940"></iframe></div>
+	          		<div class="twitter-timeline twitter-timeline-rendered" style="display: flex; max-width: 383; margin-top: 0px; margin-bottom: 0px;"><iframe id="twitter-widget-0" scrolling="yes" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 406px; height: 600px; display: block; flex-grow: 1;" title="Twitter Timeline" src="https://syndication.twitter.com/srv/timeline-profile/screen-name/mofa_kr?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOlsibGlua3RyLmVlIiwidHIuZWUiLCJ0ZXJyYS5jb20uYnIiLCJ3d3cubGlua3RyLmVlIiwid3d3LnRyLmVlIiwid3d3LnRlcnJhLmNvbS5iciJdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOmZhbHNlLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2hvcml6b25fdGltZWxpbmVfMTIwMzQiOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9lZGl0X2JhY2tlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3JlZnNyY19zZXNzaW9uIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2J1c2luZXNzX3ZlcmlmaWVkX2JhZGdlIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19jaGluX3BpbGxzXzE0NzQxIjp7ImJ1Y2tldCI6ImNvbG9yX2ljb25zIiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9yZXN1bHRfbWlncmF0aW9uXzEzOTc5Ijp7ImJ1Y2tldCI6InR3ZWV0X3Jlc3VsdCIsInZlcnNpb24iOm51bGx9LCJ0ZndfbWl4ZWRfbWVkaWFfMTU4OTciOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd19zZW5zaXRpdmVfbWVkaWFfaW50ZXJzdGl0aWFsXzEzOTYzIjp7ImJ1Y2tldCI6ImludGVyc3RpdGlhbCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2R1cGxpY2F0ZV9zY3JpYmVzX3RvX3NldHRpbmdzIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd192aWRlb19obHNfZHluYW1pY19tYW5pZmVzdHNfMTUwODIiOnsiYnVja2V0IjoidHJ1ZV9iaXRyYXRlIiwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2JsdWVfdmVyaWZpZWRfYmFkZ2UiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2xlZ2FjeV90aW1lbGluZV9zdW5zZXQiOnsiYnVja2V0IjpmYWxzZSwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2dvdl92ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19idXNpbmVzc19hZmZpbGlhdGVfYmFkZ2UiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3R3ZWV0X2VkaXRfZnJvbnRlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfX0%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=ko&amp;origin=https%3A%2F%2Fwww.mofa.go.kr%2Fwww%2Fmain.do&amp;sessionId=0c50604f2dcfabf17b4e5339487a7182a8968e65&amp;showHeader=true&amp;showReplies=false&amp;transparent=false&amp;widgetsVersion=a3525f077c700%3A1667415560940"></iframe></div>
 	          		<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	        	</div>
 	      	</li>
 	    </ol>
 		</div>
+		<br><br>
 		<!-- 독도 & 동해 -->
-		<ul class="east_area">
-			<li class="dokdo">
-          	<h2>독도</h2>
-          	<p>대한민국의 아름다운 영토</p>
-          	<ul>
-	            <li><a href="https://www.youtube.com/watch?v=muB4_LNZ2Rk&amp;feature=youtube.be" title="대한민국의 아름다운 영토 - 동영상(새창열림)" target="_blank" class="bt">동영상 보기</a></li>
-	            <li><a href="http://dokdo.mofa.go.kr/kor/" target="_blank" title="대한민국의 아름다운 영토 - 사이트(새창열림)" class="bt">사이트 가기</a></li>
-          	</ul>
+		<ul class="east_area" style="display: flex;">
+			<li class="dokdo" style="width: 40em;">
+	          	<h2 style="font-size: 2rem; font-weight: 600; color:#fff;">독도</h2>
+	          	<p style="font-weight: 600; color:#fff;">대한민국의 아름다운 영토</p>
+	          	<br>
+	          	<div class="east_btn">
+		          	<a href="https://www.youtube.com/watch?v=muB4_LNZ2Rk&amp;feature=youtube.be" title="대한민국의 아름다운 영토 - 동영상(새창열림)" target="_blank" class="bt"><button>동영상 보기</button></a>
+			        <a href="http://dokdo.mofa.go.kr/kor/" target="_blank" title="대한민국의 아름다운 영토 - 사이트(새창열림)" class="bt"><button>사이트 가기</button></a>
+				</div>
         	</li>
-        	<li class="sea">
-          		<h2>동해</h2>
-          		<p>과거,현재,미래의 이름</p>
-          		<ul>
-					<li><a href="https://www.youtube.com/watch?v=K9DKW5PqApo&amp;feature=youtube.be" target="_blank" title="과거, 현재, 미래의 이름 - 동영상(새창열림)" class="bt">동영상 보기</a></li>
-            		<li><a href="https://www.mofa.go.kr/www/wpge/m_3838/contents.do" target="_blank" title="과거, 현재, 미래의 이름 - 자세히보기(새창열림)" class="bt">자세히 보기</a></li>
-          		</ul>
+        	<li class="sea" style="width: 40em;">
+          		<h2 style="font-size: 2rem; font-weight: 600; color:#fff;">동해</h2>
+          		<p style="font-weight: 600; color:#fff;">과거,현재,미래의 이름</p>
+          		<br>
+          		<div class="east_btn">
+	          		<a href="https://www.youtube.com/watch?v=K9DKW5PqApo&amp;feature=youtube.be" target="_blank" title="과거, 현재, 미래의 이름 - 동영상(새창열림)" class="bt"><button>동영상 보기</button></a>
+	            	<a href="https://www.mofa.go.kr/www/wpge/m_3838/contents.do" target="_blank" title="과거, 현재, 미래의 이름 - 자세히보기(새창열림)" class="bt"><button>자세히 보기</button></a>
+	            </div>
 			</li>
 		</ul>
 	</div>

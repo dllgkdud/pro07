@@ -33,6 +33,7 @@
 			<div class="button_group">
 				<a href="${path1 }/users/list" class="reset_btn">취소</a>
 				<input type="submit" class="submit_btn" value="로그인">
+				<a href="${path1 }/users/agree" class="button">회원가입</a>
 			</div>
 		</form>
 	</div>
