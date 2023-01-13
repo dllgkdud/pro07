@@ -23,4 +23,19 @@ public class SampleServiceImpl implements SampleService {
 	public SampleDTO sampleOne(String id) throws Exception {
 		return sampleDao.sampleOne(id);
 	}
+
+	@Override
+	public void addSample(SampleDTO sample) throws Exception {
+		sampleDao.addSample(sample);
+	}
+
+	@Override
+	public void updSample(SampleDTO sample) throws Exception {
+		sampleDao.updSample(sample);
+	}
+
+	@Override
+	public void delSample(String id) throws Exception {
+		sampleDao.delSample(id);
+	}
 }

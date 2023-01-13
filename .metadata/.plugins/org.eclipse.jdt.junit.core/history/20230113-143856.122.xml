@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="JDBCTest" project="pro07" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="kr.go.mofa.JDBCTest" time="0.459" displayname="JDBCTest" uniqueid="[engine:junit-vintage]/[runner:kr.go.mofa.JDBCTest]">
+    <testcase name="test2" classname="kr.go.mofa.JDBCTest" time="0.459" displayname="test2" uniqueid="[engine:junit-vintage]/[runner:kr.go.mofa.JDBCTest]/[test:test2(kr.go.mofa.JDBCTest)]"/>
+  </testsuite>
+</testrun>

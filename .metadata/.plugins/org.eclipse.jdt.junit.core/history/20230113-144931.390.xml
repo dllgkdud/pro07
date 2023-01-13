@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DTOTest" project="pro07" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="kr.go.mofa.DTOTest" time="0.028" displayname="DTOTest" uniqueid="[engine:junit-vintage]/[runner:kr.go.mofa.DTOTest]">
+    <testcase name="test3" classname="kr.go.mofa.DTOTest" time="0.028" displayname="test3" uniqueid="[engine:junit-vintage]/[runner:kr.go.mofa.DTOTest]/[test:test3(kr.go.mofa.DTOTest)]"/>
+  </testsuite>
+</testrun>

@@ -61,7 +61,8 @@ public class QnaController {
 	}
 	
 	@GetMapping("upd")
-	public String qna(@RequestParam("no") int no, Model model) throws Exception { QnaDTO dto = qnaService.qnaOne(no);
+	public String qna(@RequestParam("no") int no, Model model) throws Exception { 
+		QnaDTO dto = qnaService.qnaOne(no);
 		model.addAttribute("dto", dto);
 		return "qna/update"; 
 	}

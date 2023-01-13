@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MyBatisTest" project="pro07" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="kr.go.mofa.MyBatisTest" time="0.029" displayname="MyBatisTest" uniqueid="[engine:junit-vintage]/[runner:kr.go.mofa.MyBatisTest]">
+    <testcase name="test" classname="kr.go.mofa.MyBatisTest" time="0.027" displayname="test" uniqueid="[engine:junit-vintage]/[runner:kr.go.mofa.MyBatisTest]/[test:test(kr.go.mofa.MyBatisTest)]"/>
+    <testcase name="test2" classname="kr.go.mofa.MyBatisTest" time="0.002" displayname="test2" uniqueid="[engine:junit-vintage]/[runner:kr.go.mofa.MyBatisTest]/[test:test2(kr.go.mofa.MyBatisTest)]"/>
+  </testsuite>
+</testrun>

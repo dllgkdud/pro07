@@ -1,0 +1,80 @@
+package kr.go.mofa.controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import kr.go.mofa.dto.NoticeDTO;
+import kr.go.mofa.dto.SampleDTO;
+import kr.go.mofa.service.SampleService;
+
+@Controller
+@RequestMapping("/sample/")
+public class SampleController {
+
+	@Autowired
+	SampleService sampleService;
+	
+	@GetMapping("test")
+	public String sampleList(Model model) throws Exception {
+		List<SampleDTO> sample = sampleService.sample();
+		model.addAttribute("sample", sample);
+		return "sample/test";
+	}
+	
+	@GetMapping("one")
+	public String sampleOne(@RequestParam("id") String id, Model model) throws Exception {
+		SampleDTO dto = sampleService.sampleOne(id);
+		model.addAttribute("dto", dto);
+		return "sample/one";
+	}
+	
+	@GetMapping("add")
+	public String sampleAdd() throws Exception {
+		return "sample/add";
+	}
+	
+	@PostMapping("add")
+	public String sample(HttpServletRequest request, Model model) throws Exception {
+		SampleDTO sample = new SampleDTO();
+		sample.setId(request.getParameter("id"));
+		sample.setPw(request.getParameter("pw"));
+		sampleService.addSample(sample);
+		return "redirect:/sample/list";
+	}
+	
+	@GetMapping("upd")
+	@Transactional
+	public String notice(@RequestParam("no") int no, Model model) throws Exception {
+		NoticeDTO dto = noticeService.noticeOne(no);
+		model.addAttribute("dto", dto);
+		return "notice/update";
+	}
+	
+	@PostMapping("upd")
+	public String noticeUpd(HttpServletRequest request, Model model) throws Exception {
+		int no = Integer.parseInt(request.getParameter("no"));
+		NoticeDTO notice = new NoticeDTO();
+		notice.setNo(no);
+		notice.setTitle(request.getParameter("title"));
+		notice.setContent(request.getParameter("content"));
+		noticeService.updNotice(notice);
+		return "redirect:/notice/list";
+	}
+	
+	@GetMapping("del.do")
+	public String noticeDel(HttpServletRequest request) throws Exception {
+		int no = Integer.parseInt(request.getParameter("no"));
+		noticeService.delNotice(no);
+		return "redirect:/notice/list";
+	}
+}

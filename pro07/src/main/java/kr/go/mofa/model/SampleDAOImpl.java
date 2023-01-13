@@ -23,4 +23,19 @@ public class SampleDAOImpl implements SampleDAO {
 	public SampleDTO sampleOne(String id) throws Exception {
 		return sqlSession.selectOne("sample.sampleOne", id);
 	}
+
+	@Override
+	public void addSample(SampleDTO sample) throws Exception {
+		sqlSession.insert("sample.addSample", sample);
+	}
+
+	@Override
+	public void updSample(SampleDTO sample) throws Exception {
+		sqlSession.update("sample.updSample",sample);
+	}
+
+	@Override
+	public void delSample(String id) throws Exception {
+		sqlSession.delete("sample.delSample", id);
+	}
 }

@@ -131,6 +131,14 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<!-- MockMVC Test -->  
+		<dependency>
+		    <groupId>org.mockito</groupId>
+		    <artifactId>mockito-all</artifactId>
+		    <version>1.9.5</version>
+		    <scope>test</scope>
+		</dependency>
+		
 		<!-- Spring-test -->
 		<dependency>
 		    <groupId>org.springframework</groupId>
@@ -145,6 +153,13 @@
 		  <version>5.7.0</version>
 		  <scope>test</scope>
 		</dependency>
+		
+		<!-- spring provider : 스프링에서 계약 테스트도구가 필요할 때 사용하는 라이브러리 -->
+<!-- 		<dependency>
+		    <groupId>au.com.dius.pact.provider</groupId>
+		    <artifactId>spring</artifactId>
+		    <version>4.3.2</version>
+		</dependency> -->
 		
 		<!-- mockito -->
 		<dependency>
