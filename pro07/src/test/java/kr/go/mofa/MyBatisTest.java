@@ -1,30 +1,32 @@
 package kr.go.mofa;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import lombok.extern.log4j.Log4j;
+import kr.go.mofa.dto.SampleDTO;
 
-@Log4j
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations={"file:src/main/webapp/WEB-INF/spring/root-context.xml"})
 public class MyBatisTest {
+	private static final Logger log = LoggerFactory.getLogger(MyBatisTest.class);
 	
 	@Inject
-	private SqlSessionFactory sqlFactory;
+	SqlSession sqlSession;
 	
 	@Test
-	public void test() {
-		log.info("sqlFactory:"+sqlFactory);
-	}
-	
-	@Test
-	public void test2() throws Exception {
-		try(SqlSession session = sqlFactory.openSession()) {
-			log.info("MyBatis session:"+session);
-		} catch(Exception e) {
-			e.printStackTrace();
+	public void test2() {
+		List<SampleDTO> list = sqlSession.selectList("sample.sampleList");
+		for (SampleDTO sampleList : list) {
+			log.info(sampleList.toString());
 		}
 	}
 }

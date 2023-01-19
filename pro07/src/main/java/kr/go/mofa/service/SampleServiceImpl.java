@@ -38,4 +38,10 @@ public class SampleServiceImpl implements SampleService {
 	public void delSample(String id) throws Exception {
 		sampleDao.delSample(id);
 	}
+
+	
+	@Override
+	public int cntSample() throws Exception {
+		return sampleDao.cntSample();
+	}
 }

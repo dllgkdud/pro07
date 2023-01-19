@@ -10,4 +10,6 @@ public interface SampleService {
 	public void addSample(SampleDTO sample) throws Exception;
 	public void updSample(SampleDTO sample) throws Exception;
 	public void delSample(String id) throws Exception;
+	
+	public int cntSample() throws Exception; 
 }

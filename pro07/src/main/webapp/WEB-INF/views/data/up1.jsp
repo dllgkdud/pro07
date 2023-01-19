@@ -18,15 +18,6 @@
 <jsp:include page="/WEB-INF/views/common/header.jsp" />
 	<div id="app">
 		<div class="container">
-			<!-- <nav>
-                <div class="nav-wrapper cyan">
-                    <div class="col s12">
-                        <a href="/" class="breadcrumb" style="padding-left:20px">홈</a>
-                        <a href="" class="breadcrumb">파일관리</a>
-                        <span class="breadcrumb">파일 업로드</span>
-                    </div>
-                </div>
-            </nav> -->
             <br>
             <div class="row">
             	<h4 class="center-align">파일 업로드</h4>

@@ -17,3 +17,5 @@ ol, li { list-style: none; }
 input { height:1rem; padding-left: 0.3rem; }
 textarea { padding-left: 0.3rem; resize: none; }
 a { color: #222; text-decoration: none; }
+b { color: #917c62; }
+strong { text-weight: 600; }

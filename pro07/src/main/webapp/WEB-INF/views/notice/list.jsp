@@ -17,6 +17,11 @@
 <jsp:include page="../common/header.jsp"></jsp:include>
 	<div class="container">
 		<h2>공지사항</h2>
+		<div class="breadcrumbs">
+			<span id="bc"><a href="../"><img src="${path1 }/resources/assets/images/icon_bc_home.png"></a></span>
+			<span id="bc">뉴스·공지</span>
+			<span id="bc"><a href="${path1 }/notice/list"></a>공지사항</span>
+		</div>
 		<table class="table">
 			<tr>
 				<th>번호</th>

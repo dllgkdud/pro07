@@ -20,7 +20,7 @@
 		<div class="table">
 			<h3 id="tit_eff">오시는길</h3>
 			<div class="map_info">
-				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d586.5723000573239!2d126.97477182304004!3d37.573510716645906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca294c8d29d13%3A0xd1d627b9bd556600!2z64yA7ZWc66-86rWtIOyZuOq1kOu2gA!5e0!3m2!1sko!2skr!4v1674119363059!5m2!1sko!2skr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 			<h3 style="font-size:8rem; font-weight:800; text-align:right; color:rgba(0, 0, 0, 0.08);">MOFA</h3>
 			<div class="map_content">
@@ -31,19 +31,19 @@
 				<ol>
 					<li>
 						<h4>외교부</h4>
-						<p>3호선 경복궁역 6번출구 (도보로 5분)</p>
-						<p>5호선 광화문역 1번출구 (도보로 5분)</p>
+						<p style="color:orange;"><strong>3호선</strong> 경복궁역 6번출구 (도보로 5분)</p>
+						<p style="color:purple;"><strong>5호선</strong> 광화문역 1번출구 (도보로 5분)</p>
 					</li>
 				</ol>
 				<h3>버스노선</h3>
 				<ol>
 					<li>
-						<h4>세종문화회관앞</h4>
-						<p>좌석버스 : 9000, 5500-2, 1500, 9401, 9703</p>
-						<p>지선버스 : 1711, 7016, 7018, 7022, 7212</p>
-						<p>간선버스 : 103, 150, 401, 402, 406, 704, 700, 707</p>
-						<p>광역버스 : 9401, 9703</p>
-						<p>직행버스 : 5000A, 5000B, 5005, 5500-1, 5500-2, 7900, 9000, 9000-1</p>
+						<strong>세종문화회관앞</strong>
+						<p style="color:red;">좌석버스 : 9000, 5500-2, 1500, 9401, 9703</p>
+						<p style="color:green;">지선버스 : 1711, 7016, 7018, 7022, 7212</p>
+						<p style="color:blue;">간선버스 : 103, 150, 401, 402, 406, 704, 700, 707</p>
+						<p style="color:red;">광역버스 : 9401, 9703</p>
+						<p style="color:red;">직행버스 : 5000A, 5000B, 5005, 5500-1, 5500-2, 7900, 9000, 9000-1</p>
 					</li>
 				</ol>
 			</div>

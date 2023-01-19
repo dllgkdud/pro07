@@ -38,4 +38,10 @@ public class SampleDAOImpl implements SampleDAO {
 	public void delSample(String id) throws Exception {
 		sqlSession.delete("sample.delSample", id);
 	}
+
+	
+	@Override
+	public int cntSample() throws Exception {
+		return sqlSession.selectOne("sample.cntSample"); 
+	}
 }

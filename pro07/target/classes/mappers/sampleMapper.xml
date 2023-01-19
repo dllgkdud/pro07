@@ -18,4 +18,7 @@
 	<delete id="delSample">
 		delete from sample where id=#{id}
 	</delete>
+	<select id="cntSample" resultType="int">
+		select count(*) from sample;
+	</select>
 </mapper>

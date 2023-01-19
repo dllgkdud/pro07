@@ -132,10 +132,10 @@
 					<em>2022.01.11</em>
 				</a>
 			</div>
+			<div class="news_button">
+				<a href="${path1 }/notice/list" class="more" title="공지 더보기">더보기</a>
+			</div>
 		</div>
-	</div>
-	<div class="news_button mx-5 ml-3">
-		<a href="${path1 }/notice/list" class="more" title="공지 더보기">더보기</a>
 	</div>
 </div>
 <div class="sns">

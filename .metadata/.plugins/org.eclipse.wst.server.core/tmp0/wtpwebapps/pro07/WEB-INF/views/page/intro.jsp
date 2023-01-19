@@ -19,9 +19,9 @@
 		<h2>외교부 소개</h2>
 		<div class="table">
 			<h3 id="tit_eff">외교부 설립목적</h3>
-			<div class="intro_info">
+			<i class="intro_info">
 				<img src="${path1 }/resources/upload/main/bg_intro_1_01.jpg" alt="bg">
-			</div>
+			</i>
 			<h3 style="font-size:8rem; font-weight:800; text-align:right; color:rgba(0, 0, 0, 0.08);">MOFA</h3>
 			<div class="intro_content">
 				<ol>

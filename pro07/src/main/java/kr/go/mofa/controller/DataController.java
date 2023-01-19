@@ -36,11 +36,12 @@ public class DataController {
 		
 		try {
 			multi = new MultipartRequest(request, uploadPath, maxFileSize, encType, new DefaultFileRenamePolicy());
-			System.out.println(multi.getOriginalFileName("upload"));
-			System.out.println(multi.getFilesystemName("upload"));
+			//System.out.println(multi.getOriginalFileName("upload"));
+			//System.out.println(multi.getFilesystemName("upload"));
 			
 		} catch(IOException e) {
-			System.out.println("[에러] " + e.getMessage());
+			e.printStackTrace();
+			//System.out.println("[에러] " + e.getMessage());
 		}
 		return "redirect:/";
 	}
